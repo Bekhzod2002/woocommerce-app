@@ -1,0 +1,64 @@
+$page-back: linear-gradient(180deg, #E5EFFF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);
+$buttonhead:  #7854F7;
+$colorfont: #FFFFFF;
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.background {
+	position: relative;
+	width: 1920px;
+	height: 1188px;
+	left: 0px;
+	top: 0px;
+	background: $page-back;
+	.headmenu{
+        display: flex;
+        justify-content: space-between;
+        padding: 3% 5% 0 3%;
+}
+.menu {
+	display: flex;
+	gap: 180px;
+	align-items: center;
+}
+.links {
+	display: flex;
+	gap: 25px;
+}
+
+.linkheader {
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21px;
+	font-family: 'Roboto';
+	color: #272D4E;
+
+}
+
+.logo {
+	height: 20px;
+	cursor: pointer;
+}
+.login {
+	gap: 20px;
+	display: flex;
+	align-items: center;
+}
+.startbtn {
+	border: none;
+	width: 120px;
+	height: 47px;
+	left: 1699px;
+	top: 37px;
+	background: $buttonhead;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+svg {
+	cursor: pointer;
+}
+}

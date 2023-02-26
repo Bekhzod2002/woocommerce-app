@@ -1,0 +1,102 @@
+.storeowners{
+    position: absolute;
+    width: 520px;
+    height: 140px;
+    left: 700px;
+    
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 70px;
+    
+    text-align: center;
+    
+    color: #272D4E;
+}
+ 
+.caruselimg1{
+    position: absolute;
+    left: 391px;
+    top: 200px;
+}
+
+.caruselimg2{
+    position: absolute;
+    left: 1348px;
+    top: 170px;
+}
+
+.caruselimg3{
+    position: absolute;
+    left: 102px;
+    top: 400px;
+}
+
+.caruselimg4{
+    position: absolute;
+    left: 1533px;
+    top: 450px;
+}
+
+.caruselimg5{
+    position: absolute;
+    left: 206px;
+    top: 770px;
+}
+
+.caruselimg6{
+    position: absolute;
+    left: 1415px;
+    top: 820px;
+}
+
+.caruselimg7{
+    position: absolute;
+    left: 980.16px;
+    top: 400px;
+}
+
+.caruselimg8{
+    position: absolute;
+    left: 460px;
+    top: 650px;
+}
+
+
+
+.item1{
+    position: relative;
+    width: 730px;
+    height: 391px;
+    left: 595px;
+    top: 350px;
+    background: #FFFFFF;
+    /* Box-shadow */
+
+    box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+    border-radius: 20px;
+    .backimg{
+        position: absolute;
+        left: 260px;
+        top: 40px;        
+    }
+    .slidetxt{
+        position: absolute;
+        width: 566.17px;
+        height: 198px;
+        left: 77px;
+        top: 85px;
+
+        font-family: 'Circular Std';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26.7px;
+        line-height: 40px;
+        /* or 148% */
+
+        text-align: center;
+
+        color: #94A2B3;
+    }
+}

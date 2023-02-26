@@ -1,0 +1,182 @@
+
+.linkfoot{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.footer{
+    position: relative;
+    width: 1920px;
+    height: 900px;
+    left: 0px;
+    top: 4690px;
+
+    background: #7854F7;
+    .circle4{
+		box-sizing: border-box;
+
+		position: absolute;
+		width: 89px;
+		height: 88px;
+		border-radius: 80px;
+		left: 1657px;
+        top: -60px;
+		border: 5px solid #FFBA49;
+	}
+    .iconsfoot{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        top: 100px;
+        align-items: center;
+
+        .checkicon{
+            position: absolute;
+            width: 369px;
+            height: 53px;
+            left: 304px;
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 52px;
+            color: #FFFFFF;
+        }
+        .unionicon{
+            position: absolute;
+            width: 386px;
+            height: 53px;
+            left: 747px;
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 52px;
+
+
+            color: #FFFFFF;
+        }
+        .lockicon{
+            position: absolute;
+            width: 368px;
+            height: 53px;
+            left: 1207px;
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 52px;
+            color: #FFFFFF;
+        }
+    }
+    .logofoot{
+        position: absolute;
+        left: 44.21%;
+        right: 45.23%;
+        top: 35.33%;
+        bottom: 9.05%;
+    }
+    .chiziq{
+        position: absolute;
+        width: 1480px;
+        left: 180px;
+        top: 460px;
+
+        border-bottom: 1px solid #9A7DFF;
+    }
+    .footinfo{
+        position: absolute;
+        display: flex;
+        top: 500px;
+        gap: 110px;
+        width: 100%;
+        left: 437px;
+        .aboutus{
+            display: grid;
+            gap: 10px;
+            width: 102px;
+            height: 77px;
+            .abouthead{
+                font-size: 14px;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+        .footmenu{
+            width: 132px;
+            height: 264px;
+            display: grid;
+            gap: 10px;
+            .commerce{
+              
+                font-size: 14px;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+        .productmenu{
+            width: 145px;
+            height: 88px;
+            display: grid;
+            gap: 10px;
+            .otherproduct{
+              
+                font-size: 14px;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+        .support{
+          
+            display: grid;
+            gap: 10px;
+            height: 154px;
+            .supporthead{
+              
+                font-size: 14px;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+        .ourrecommend{
+          
+            display: grid;
+            gap: 10px;
+            height: 110px;
+            .recommendation{
+              
+                font-size: 14px;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.footwhite{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: 6170px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 340px;
+    
+    .iconscontact{
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+    }
+}
+
