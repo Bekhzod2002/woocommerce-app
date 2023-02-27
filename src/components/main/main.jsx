@@ -23,7 +23,6 @@ import consultation from '../../images/consultation.png';
 import union from '../../images/Union.png';
 import ourdevelopment from '../../images/ourdevelopment.png';
 import ourconsultation from '../../images/ourconsultation.png';
-
 import carouselellips1 from '../../images/carouselellips1.png';
 import group13 from '../../images/Group 13.png';
 import peoples from '../../images/peoples.png';
@@ -31,13 +30,15 @@ import radius from '../../images/radius.png';
 import './main.scss';
 import Footer from "../Footer/Footer";
 import Carusel from "../Carousel/carousel";
-
+import {RiShieldCheckFill} from'react-icons/ri'
 
 const Main = () => {
 
     return(
         <>
+
             <div className="landing">
+
                 <div className="landingtxt">
                     <h5 className="landinghead">Building exactly the eCommerce website you want.</h5>
                     <p className="txtcommerce">WooCommerce is a customizable, open-source eCommerce platform built on WordPress. Get started quickly and make your way.</p>
@@ -86,6 +87,10 @@ const Main = () => {
                                 </label>
                             </div>
                         </div>
+                        
+                        <div className="shield">
+                                <RiShieldCheckFill/>
+                            </div>
 
                         <div>
 

@@ -3,6 +3,7 @@ $buttonhead:  #7854F7;
 $colorfont: #FFFFFF;
 
 body {
+	width: 1920px;
 	margin: 0;
 	overflow-x: hidden;
 }
@@ -14,19 +15,34 @@ body {
 	left: 0px;
 	top: 0px;
 	background: $page-back;
-	.headmenu{
-        display: flex;
-        justify-content: space-between;
-        padding: 3% 5% 0 3%;
+
+}
+
+.headmenu{
+	display: flex;
+	justify-content: space-between;
+	padding: 3% 5% 0 3%;
+	height: 60px;
+	background: $page-back;
+}
+
+.landingvector{
+	position: absolute;
+	width: 1020px;
+	left: 46%;
+	right: -41.88%;
+	top: 0;
+	bottom: 81.76%;
+	
 }
 .menu {
-	display: flex;
-	gap: 180px;
-	align-items: center;
+display: flex;
+gap: 180px;
+align-items: center;
 }
 .links {
-	display: flex;
-	gap: 25px;
+display: flex;
+gap: 25px;
 }
 
 .linkheader {
@@ -44,21 +60,20 @@ body {
 	cursor: pointer;
 }
 .login {
-	gap: 20px;
+	gap: 40px;
 	display: flex;
 	align-items: center;
 }
 .startbtn {
+	position: relative;
 	border: none;
 	width: 120px;
 	height: 47px;
-	left: 1699px;
-	top: 37px;
 	background: $buttonhead;
 	color: #FFFFFF;
 	border-radius: 5px;
 }
 svg {
-	cursor: pointer;
-}
+cursor: pointer;
+position: relative;
 }

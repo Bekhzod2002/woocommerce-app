@@ -61,10 +61,11 @@ $color-head: #272D4E;
 	line-height: 25px;
 	color: $color-link;
 }
+
 .group8 {
 	position: absolute;
 	margin-top: 4%;
-	margin-left: 70%;
+	margin-left: 72%;
 }
 .group7 {
 	position: absolute;
@@ -89,7 +90,7 @@ $color-head: #272D4E;
 }
 .girls {
 	position: absolute;
-	left: -100px;
+	left: -80px;
 	top: -80px;
 	width: 282.17px;
 	height: 195.53px;
@@ -176,6 +177,21 @@ input {
 		}
 	}
 }
+
+.shield{
+	position: absolute;
+	width: 98.13px;
+	height: 68.46px;
+	left: 551.72px;
+	top: 403.44px;
+	font-size: 40px;
+	background: #EF4358;
+	align-items: center;
+	justify-content: center;
+	color: $font-color;
+	display: flex;
+	border-radius: 31.3552px;
+}
 .shop {
 	width: 75.64px;
 	height: 75.64px;
@@ -188,8 +204,6 @@ input {
 	svg {
 		width: 36.67px;
 		height: 33px;
-		left: 1188.23px;
-		top: 663.28px;
 		color: $font-color;
 	}
 }
@@ -197,8 +211,8 @@ input {
 	position: absolute;
 	display: flex;
 	gap: 15px;
-	margin-left: 10%;
-	margin-top: 4%;
+	left: 58%;
+	top: 5%;
 }
 .shoes {
 	width: 57.28px;
@@ -225,8 +239,8 @@ input {
 	position: absolute;
 	width: 268.85px;
 	height: 88.84px;
-	margin-left: 10%;
-	margin-top: 10%;
+	left: 57%;
+	top: 10%;
 	font-family: 'Circular Std';
 	font-style: normal;
 	font-weight: 600;
@@ -239,7 +253,7 @@ input {
 	display: flex;
 	gap: 15px;
 	left: 60%;
-	top: 45%;
+	top: 49%;
 }
 .boxsize {
 	width: 29.27px;
@@ -257,7 +271,7 @@ input {
 	display: flex;
 	gap: 40%;
 	top: 65%;
-	left: 60%;
+	left: 57%;
 }
 .saleprice {
 	position: absolute;
@@ -290,8 +304,8 @@ input {
 .addproductpart {
 	position: relative;
 	display: flex;
-	justify-content: space-between;
-	margin-left: 5%;
+	gap: 30px;
+	
 	width: 240.28px;
 	height: 40.98px;
 	background: #F6F6F6;
@@ -320,7 +334,9 @@ input {
 	width: 268.12px;
 	height: 49.18px;
 	top: 340px;
-	left: 550px;
+	left: 530px;
+	font-size: 11px;
+	font-weight: 400;
 	border: none;
 	color: $font-color;
 	background: #7854F7;

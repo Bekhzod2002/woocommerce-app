@@ -1,11 +1,15 @@
 import React from "react";
 import LOGO from '../../images/LOGO.png';
+import landingvector from '../../images/landingvector.png';
+
 import '../index.scss'
 
 
 const Header = () => {
     return(
         <div className="headerpart">
+                <img className="landingvector" src={landingvector}/>
+
             <div className="headmenu">
                 <div className="menu">
                     <div className="logo">
