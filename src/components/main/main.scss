@@ -4,501 +4,591 @@ $color-link: #299EF3;
 $color-text: #94A2B3;
 $color-yellow: #FFBA49;
 $color-head: #272D4E;
+@import "../mixin/mixins";
 
 .landing {
 	display: flex;
 	gap: 5%;
 
-}
-.landinghead {
-	position: absolute;
-	width: 818px;
-	height: 285px;
-	margin-left: 11%;
-	margin-top: 10%;
-	font-family: 'Circular Std';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 85px;
-	line-height: 95px;
-	color: $color-head;
-}
-.txtcommerce {
-	position: absolute;
-	width: 716px;
-	height: 50px;
-	margin-left: 11%;
-	margin-top: 27%;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 25px;
-	color: $color-text;
-}
-.linktonewstore {
-	position: absolute;
-	margin-top: 32%;
-	margin-left: 10%;
-}
-.newstore {
-	width: 267px;
-	height: 72px;
-	color: $font-color;
-	background: $color-button;
-	border-radius: 60px;
-	border: none;
-}
-.customize {
-	width: 199px;
-	height: 25px;
-	left: 495px;
-	text-decoration: none;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 25px;
-	color: $color-link;
-}
-
-.group8 {
-	position: absolute;
-	margin-top: 4%;
-	margin-left: 72%;
-}
-.group7 {
-	position: absolute;
-	margin-top: 12.7%;
-	margin-left: 48%;
-}
-.group5 {
-	position: absolute;
-	margin-top: 19%;
-	margin-left: 79.5%;
-}
-.buyproduct {
-	position: relative;
-	width: 907.4px;
-	height: 421.5px;
-	display: flex;
-	left: 1033.6px;
-	top: 220.67px;
-	background: $font-color;
-	border: 0.998348px solid #E5EFFF;
-	border-radius: 20px;
-}
-.girls {
-	position: absolute;
-	left: -80px;
-	top: -80px;
-	width: 282.17px;
-	height: 195.53px;
-	background:  $font-color;
-	border-radius: 20px;
-}
-.payforms {
-	position: absolute;
-	width: 436.28px;
-	height: 248.22px;
-	top: 360px;
-	left: 90px;
-	background: $font-color;
-	border-radius: 23.4905px;
-}
-.stripe {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 45px;
-	padding-top: 20px;
-	border-bottom: 1px solid #E5EFFF;
-	color: $color-text;
-}
-.paypal {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 30px;
-	padding-top: 20px;
-	border-bottom: 1px solid #E5EFFF;
-	color: $color-text;
-}
-.bank {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 45px;
-	padding-top: 20px;
-	color: $color-text;
-}
-.switch {
-	position: relative;
-	display: inline-block;
-	width: 46px;
-	height: 23px;
-	border-radius: 15px;
-	background: #DAE5F7;
-	input {
-		opacity: 0;
-		width: 0;
-		height: 0;
-	}
-}
-.slider {
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	&:before {
+	.landinghead {
 		position: absolute;
-		content: "";
-		width: 16.39px;
-		height: 16.39px;
-		left: 4px;
-		top: 3px;
-		border-radius: 15px;
-		background: #8161F7;
-		transition: 0.4s;
+		width: 43%;
+		height: 24%;
+		left: 11%;
+		top: 24%;
+		font-family: 'Circular Std';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 500%;
+		line-height: 100%;
+		color: $color-head;
+		@include respons(1600px) {
+			font-size: 420%;
+		}
+		@include respons(1500px) {
+			font-size: 420%;
+		}
+		@include respons(1440px){
+			font-size: 350%;
+		} 
 	}
-}
-input {
-	&:checked {
-		& + .slider {
-			background: #70C217;
+	.txtcommerce {
+		position: absolute;
+		width: 40%;
+		height: 15%;
+		left: 11%;
+		top: 48%;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 100%;
+		line-height: 150%;
+		color: $color-text;
+		@include respons(1600px) {
+			font-size: 90%;
+			top: 42%;
+		}
+		@include respons(1440px) {
+			font-size: 75%;
+		}
+	}
+	.linktonewstore {
+		position: absolute;
+		width: 30%;
+		height: 7%;
+		top: 60%;
+		left: 11%;
+		align-items: center;
+		display: flex;
+		@include respons(1600px){
+			top: 50%;
+		}
+		.newstore { 
+			position: absolute;
+			width: 40%;
+			height: 80%;
+			color: $font-color;
+			background: $color-button;
+			border-radius: 60px;
+			border: none;
+			
+		}
+		.link{
+			position: absolute;
+			width: 60%;
+			height: 60%;
+			left: 42%;	
+			display: flex;
+			gap: 10px;	
+			align-items: center;	
+		}
+		.customize {
+
+			text-decoration: none;
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 25px;
+			color: $color-link;
+		}
+		
+	}
+	
+	.group8 {
+		position: absolute;
+		width: 13%;
+		height: 48%;
+		top: 17%;
+		left: 79%;
+		
+	}
+	.group7 {
+		position: absolute;
+		height: 21%;
+		width: 28%;
+		top: 30.5%;
+		left: 52%;
+	}
+	.group5 {
+		position: absolute;
+		width: 12%;
+		height: 46%;
+		top: 40.6%;
+		left: 84.5%;
+	}
+	.buyproduct {
+		position: absolute;
+		width: 45%;
+		height: 35.7%;
+		display: flex;
+		top: 30%;
+		left: 58%;
+		background: $font-color;
+		border: 0.998348px solid #E5EFFF;
+		border-radius: 20px;
+	}
+	.bitmap{
+		position: absolute;
+		width: 50%;
+		height: 100%;
+	}
+	.girls {
+		position: absolute;
+		left: -65px;
+		top: -70px;
+		width: 33%;
+		height: 45%;
+		background:  $font-color;
+		border-radius: 20px;
+	}
+	.payforms {
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		top: 76%;
+		left: 11%;
+		background: $font-color;
+		border-radius: 23.4905px;
+	}
+
+	.paytxt{
+		width: 40%;
+		align-items: center;
+		text-align: center;
+	}
+	.stripe {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: 7%;
+		padding-top: 20px;
+		border-bottom: 1px solid #E5EFFF;
+		color: $color-text;
+		
+	}
+	.paypal {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5%;
+		padding-top: 20px;
+		border-bottom: 1px solid #E5EFFF;
+		color: $color-text;
+	}
+	.bank {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 7%;
+		padding-left: 10%;
+		padding-top: 20px;
+		color: $color-text;
+	}
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 46px;
+		height: 23px;
+		border-radius: 15px;
+		background: #DAE5F7;
+		input {
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+	}
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		&:before {
+			position: absolute;
+			content: "";
+			width: 16.39px;
+			height: 16.39px;
+			left: 4px;
+			top: 3px;
 			border-radius: 15px;
-			transition: 0.1s;
-			&:before {
-				transform: translate(24px);
-				background: $font-color;
+			background: #8161F7;
+			transition: 0.4s;
+		}
+	}
+	input {
+		&:checked {
+			& + .slider {
+				background: #70C217;
+				border-radius: 15px;
+				transition: 0.1s;
+				&:before {
+					transform: translate(24px);
+					background: $font-color;
+				}
 			}
 		}
 	}
-}
-
-.shield{
-	position: absolute;
-	width: 98.13px;
-	height: 68.46px;
-	left: 551.72px;
-	top: 403.44px;
-	font-size: 40px;
-	background: #EF4358;
-	align-items: center;
-	justify-content: center;
-	color: $font-color;
-	display: flex;
-	border-radius: 31.3552px;
-}
-.shop {
-	width: 75.64px;
-	height: 75.64px;
-	top: 304px;
-	left: -35px;
-	background: $color-yellow;
-	border-radius: 37.7902px;
-	border: none;
-	position: absolute;
-	svg {
-		width: 36.67px;
-		height: 33px;
+	
+	.shield{
+		position: absolute;
+		width: 13%;
+		height: 16%;
+		left: 63%;
+		top: 403.44px;
+		font-size: 40px;
+		background: #EF4358;
+		align-items: center;
+		justify-content: center;
 		color: $font-color;
+		display: flex;
+		border-radius: 31.3552px;
+	}
+	.shop {
+		width: 75.64px;
+		height: 75.64px;
+		top: 304px;
+		left: -35px;
+		background: $color-yellow;
+		border-radius: 37.7902px;
+		border: none;
+		position: absolute;
+		svg {
+			width: 36.67px;
+			height: 33px;
+			color: $font-color;
+		}
+	}
+	.productmarka {
+		position: absolute;
+		display: flex;
+		gap: 15px;
+		left: 58%;
+		top: 5%;
+	}
+	.shoes {
+		width: 57.28px;
+		height: 17.53px;
+		font-family: 'Circular Std';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 11.9802px;
+		line-height: 15px;
+		letter-spacing: 1.9967px;
+		color: $color-head;
+	}
+	.marka {
+		width: 104.03px;
+		height: 17.53px;
+		font-family: 'Circular Std';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 11.9802px;
+		line-height: 15px;
+		color: $color-text;
+	}
+	.adidas {
+		position: absolute;
+		width: 40%;
+		height: 88.84px;
+		left: 57%;
+		top: 10%;
+		font-family: 'Circular Std';
+		font-style: normal;
+		font-weight: 600;
+		font-size:250%;
+		line-height: 38px;
+		color: #222222;
+
+		@include respons(1700px) {
+			font-size: 200%;
+		}
+	}
+	.sizeproduct {
+		position: absolute;
+		display: flex;
+		gap: 15px;
+		left: 60%;
+		top: 49%;
+	}
+	.boxsize {
+		width: 29.27px;
+		height: 29.27px;
+		left: 1783.16px;
+		top: 534.94px;
+		border: none;
+		font-size: 9px;
+		background: #F6F6F6;
+		border-radius: 4.99174px;
+		align-items: center;
+	}
+	.productprice {
+		position: absolute;
+		display: flex;
+		gap: 40%;
+		top: 65%;
+		left: 57%;
+	}
+	.saleprice {
+		position: absolute;
+		width: 67.8px;
+		height: 32.73px;
+		bottom: 5px;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 23.9604px;
+		line-height: 28px;
+		letter-spacing: 0.998348px;
+		color: $color-button;
+	}
+	.mainprice {
+		position: absolute;
+		width: 40.91px;
+		height: 18.7px;
+		left: 25px;
+		top: 20px;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13.9769px;
+		line-height: 16px;
+		letter-spacing: 0.998348px;
+		text-decoration-line: line-through;
+		color: $color-text;
+	}
+	.addproductpart {
+		position: relative;
+		display: flex;
+		gap: 30px;
+		
+		width: 240.28px;
+		height: 40.98px;
+		background: #F6F6F6;
+		border-radius: 4.99174px;
+	}
+	.increment {
+		border: none;
+		color: #222222;
+		font-weight: 800;
+		background: none;
+	}
+	.counter {
+		border: none;
+		color: #222222;
+		font-weight: 500;
+		background: none;
+	}
+	.decrement {
+		border: none;
+		color: #222222;
+		font-weight: 800;
+		background: none;
+	}
+	.addtocart {
+		position: absolute;
+		width: 31%;
+		height: 49.18px;
+		top: 80%;
+		left: 60%;
+		font-size: 11px;
+		font-weight: 400;
+		border: none;
+		color: $font-color;
+		background: #7854F7;
+		border-radius: 4.99174px;
 	}
 }
-.productmarka {
-	position: absolute;
-	display: flex;
-	gap: 15px;
-	left: 58%;
-	top: 5%;
-}
-.shoes {
-	width: 57.28px;
-	height: 17.53px;
-	font-family: 'Circular Std';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 11.9802px;
-	line-height: 15px;
-	letter-spacing: 1.9967px;
-	color: $color-head;
-}
-.marka {
-	width: 104.03px;
-	height: 17.53px;
-	font-family: 'Circular Std';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 11.9802px;
-	line-height: 15px;
-	color: $color-text;
-}
-.adidas {
-	position: absolute;
-	width: 268.85px;
-	height: 88.84px;
-	left: 57%;
-	top: 10%;
-	font-family: 'Circular Std';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 35px;
-	line-height: 38px;
-	color: #222222;
-}
-.sizeproduct {
-	position: absolute;
-	display: flex;
-	gap: 15px;
-	left: 60%;
-	top: 49%;
-}
-.boxsize {
-	width: 29.27px;
-	height: 29.27px;
-	left: 1783.16px;
-	top: 534.94px;
-	border: none;
-	font-size: 9px;
-	background: #F6F6F6;
-	border-radius: 4.99174px;
-	align-items: center;
-}
-.productprice {
-	position: absolute;
-	display: flex;
-	gap: 40%;
-	top: 65%;
-	left: 57%;
-}
-.saleprice {
-	position: absolute;
-	width: 67.8px;
-	height: 32.73px;
-	bottom: 5px;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 23.9604px;
-	line-height: 28px;
-	letter-spacing: 0.998348px;
-	color: $color-button;
-}
-.mainprice {
-	position: absolute;
-	width: 40.91px;
-	height: 18.7px;
-	left: 25px;
-	top: 20px;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 13.9769px;
-	line-height: 16px;
-	letter-spacing: 0.998348px;
-	text-decoration-line: line-through;
-	color: $color-text;
-}
-.addproductpart {
-	position: relative;
-	display: flex;
-	gap: 30px;
-	
-	width: 240.28px;
-	height: 40.98px;
-	background: #F6F6F6;
-	border-radius: 4.99174px;
-}
-.increment {
-	border: none;
-	color: #222222;
-	font-weight: 800;
-	background: none;
-}
-.counter {
-	border: none;
-	color: #222222;
-	font-weight: 500;
-	background: none;
-}
-.decrement {
-	border: none;
-	color: #222222;
-	font-weight: 800;
-	background: none;
-}
-.addtocart {
-	position: absolute;
-	width: 268.12px;
-	height: 49.18px;
-	top: 340px;
-	left: 530px;
-	font-size: 11px;
-	font-weight: 400;
-	border: none;
-	color: $font-color;
-	background: #7854F7;
-	border-radius: 4.99174px;
-}
+
 
 
 .features-section{
 	position: absolute;
-	width: 1601px;
-	height: 888px;
-	left: 114px;
+	width: 85%;
+	height: 80%;
+	left: 6%;
 	top: 992px;
 	.simplehead{
 		position: absolute;
-		width: 557px;
-		height: 140px;
-		left: 550px;
-		
-
+		width: 40%;
+		height: 15%;
+		left: 33%;
 		font-family: 'Circular Std';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 65px;
+		font-size: 350%;
 		line-height: 70px;
-		/* or 127% */
-
 		text-align: center;
-
 		color: $color-head;
 	}
 	.consul{
 		position: absolute;
+		width: 33%;
+		height: 42%;
 		left: 2%;
 		top: 30%;	
 	}
 	.apple{
 		position: absolute;
+		width: 4%;
+		height: 6%;
 		left: 0.5%;
 		top: 33.5%;
 
 	}
 	.payment{
 		position: absolute;
+		width: 19%;
+		height: 40%;
 		left: -4.5%;
 		top: 36%;
-		border-radius: 10px;
 	}	
 
 	.alltostart{
 		position: absolute;
-		width: 351px;
+		width: 30%;
 		height: 70px;
-		left: 93px;
-		top: 586px;
+		left: 5.5%;
+		top: 65%;
 		font-family: 'Circular Std';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 36px;
-		line-height: 70px;
+		font-size: 210%;
+		
+		@include main(1920px) {
+			width: 30%;
+			top: 65%;
+			font-size: 210%;
+		}
+		
+		@include respons(1440px)	{
+			top: 65%;
+		}
 	}
 	
 	.addplugin{
 		position: absolute;
-		width: 430px;
+		width: 30%;
 		height: 60px;
-		left: 93px;
-		top: 711px;
-		
+		left: 5.5%;
+		top: 75%;
 		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 18px;
-		line-height: 30px;
-		/* or 167% */
-		
-		
+		font-size: 110%;
 		color: $color-text;
+
+		@include responsive(1440px) {
+			width: 30%;
+			font-size: 80%;
+		}
+
+		@include main(1920px) {
+			width: 30%;
+			font-size: 110%;
+		}
+		@include respons(1440px) {
+			width: 30%;
+			font-size: 80%;
+		}
 	}
 
 	.wordpress{
 		position: absolute;
-		width: 227px;
+		width: 17.5%;
 		height: 25px;
-		left: 93px;
-		top: 806px;
+		left: 5.5%;
+		top: 85%;
 		
 		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 110%;
 		line-height: 25px;
-		/* identical to box height, or 139% */
-		
-		
 		color: $color-link;
+		@include responsive(1440px) {
+			font-size: 90%;
+		}
+		@include respons(1440px) {
+			font-size: 90%;
+			top: 80%;
+		}
 	}
 
-		.planshet{
-			position: absolute;
-			left: 35%;
-			top: 36%;
-		}
+	.planshet{
+		position: absolute;
+		width: 33%;
+		height: 42%;
+		left: 35%;
+		top: 36%;
+	}
 		.jetpack{
 			position: absolute;
+			width: 13%;
+			height: 18%;
 			left: 49%;
-			top: 51.5%;
+			top: 50%;
 
 		}	
 		.googleads{
 			position: absolute;
+			width: 13%;
+			height: 18%;
 			left: 43.5%;
 			top: 65%;
 
 		}
 		.facebook{
 			position: absolute;
+			width: 13%;
+			height: 18%;
 			top: 46.5%;
 			left: 38%;
 
 		}
 		.monkey{
 			position: absolute;
-
+			width: 13%;
+			height: 18%;
 			left: 53%;
 			top: 38%;
 		}
 
 		.square{
 			position: absolute;
+			width: 13%;
+			height: 18%;
 			left: 38%;
 			top: 34%;
 		}
 
 		.extend{
 			position: absolute;
-			width: 375px;
+			width: 35%;
 			height: 70px;
-			left: 620px;
-			top: 630px;
+			left: 38%;
 			
+			top: 72%;
 			font-family: 'Circular Std';
 			font-style: normal;
 			font-weight: 700;
-			font-size: 36px;
+			font-size: 200%;
 			line-height: 70px;
-			/* identical to box height, or 194% */
-			
-			
 			color: $color-head;
 		}
 
 		.gymclass{
 			position: absolute;
-			width: 430px;
+			width: 29%;
 			height: 60px;
-			left: 620px;
-			top: 750px;
+			left: 38%;
+			top: 790px;
 			font-family: 'Roboto';
 			font-style: normal;
 			font-weight: 400;
-			font-size: 18px;
+			font-size: 115%;
 			line-height: 30px;
 			
 			color: $color-text;
@@ -508,8 +598,8 @@ input {
 			position: absolute;
 			width: 165px;
 			height: 25px;
-			left: 620px;
-			top: 851px;
+			left: 38%;
+			top: 891px;
 			
 			font-family: 'Roboto';
 			font-style: normal;
@@ -522,50 +612,55 @@ input {
 
 		.employees{
 			position: absolute;
+			width: 33%;
+			height: 42%;
 			left: 68%;
 			top: 43%;
 		}
 		.clients{
 			position: absolute;
+			width: 17%;
+			height: 24%;			
 			left: 88%;
 			top: 56%;	
 		}
 		.teamwork{
 			position: absolute;
+			width: 15%;
+			height: 21%;
 			left: 70%;
 			top: 37%;
 		}
 		.collective{
 			position: absolute;
+			width: 13.5%;
+			height: 20%;
 			left: 85%;
 			top: 27%;
-
 		}
 		.community{
 			position: absolute;
-			width: 315px;
+			width: 30%;
 			height: 70px;
-			left: 1150px;
-			top: 680px;			
+			left: 71%;
+			top: 76%;
 			font-family: 'Circular Std';
 			font-style: normal;
 			font-weight: 700;
-			font-size: 36px;
+			font-size: 230%;
 			line-height: 70px;
 			color: $color-head;
 		}
 		.fastgrow{
 			position: absolute;
-			width: 430px;
+			width: 34%;
 			height: 60px;
-			left: 1150px;
-			top: 810px;
-			
+			left: 71%;
+			top: 89%;
 			font-family: 'Roboto';
 			font-style: normal;
 			font-weight: 400;
-			font-size: 18px;
-			line-height: 30px;
+			font-size: 110%;
 			color: $color-text;
 			
 		}
@@ -573,8 +668,8 @@ input {
 			position: absolute;
 			width: 159px;
 			height: 25px;
-			left: 1150px;
-			top: 905px;
+			left: 71%;
+			top: 99%;
 			font-family: 'Roboto';
 			font-style: normal;
 			font-weight: 700;
@@ -586,87 +681,84 @@ input {
 
 .about-section{
 	position: absolute;
+	width: 100%;
 	height: 1182px;
 	left: 0px;
 	top: 2204px;
 	.develop-part{
 		position: absolute;
-		width: 1920px;
+		width: 100%;
 		height: 1110px;
 		left: 0px;			
 		background: url(../../images/rectangleback.png);
 		.union{
 			position: absolute;
-			left: 69%;
+			left: 68.5%;
+			width: 31.5%;
+			height: 329px;
 		}
 		.ellipse1{
-			box-sizing: border-box;
 
 			position: absolute;
-			width: 65px;
-			height: 65px;
-			left: 217px;
-			top: 160px;
-			border-radius: 40px;			
-			border: 5px solid $color-yellow;
+			width: 4%;
+			height: 6.5%;
+			left: 11%;
+			top: 9%;
 		}
 		.ellipse2{
-			box-sizing: border-box;
 
 			position: absolute;
-			width: 401px;
-			height: 401px;
-			left: 240px;
+			width: 20%;
+			height: 36%;
+			left: 12.2%;
 			top: 170px;
-			border-radius: 380px;
-			border: 5px solid $color-yellow;
 		}
  		.markalist{
 			position: absolute;
-			left: 250px;
-			top: 350px;
+			width: 13%;
+			height: 48%;
+			left: 13%;
+			top: 32%;
 		} 
 		.ellipse3{
 			
-			box-sizing: border-box;
 			position: absolute;
-			width: 65px;
-			height: 65px;
-			left: 1200px;
-			top: 520px;
-			border-radius: 40px;			
-			border: 5px solid $color-yellow;	
+			width: 3.7%;
+			height: 6.5%;
+			left: 64%;
+			top: 46.5%;
 		}
 		.ellipse4{
-			box-sizing: border-box;
 
 			position: absolute;
-			width: 262px;
-			height: 262px;
-			left: 1441px;
+			width: 13%;
+			height: 23%;
+			left: 74.5%;
 			top: 520px;
-			border-radius: 160px;
-			
-			border: 5px solid $color-yellow;
 		}
 		.markalist2{
 			position: absolute;
-			left: 1230px;
-			top: 720px;
+			width: 20%;
+			height: 15%;
+			left: 69%;
+			top: 67%;
+
 		}
-		.ourdevelopment{
+		
+		.ourdevimg{
 			position: absolute;
-			left: 300px;
-			top: -65px;
+			left: 15%;
+			top: -65px;	
+			width: 27%;
+			height: 57%;
 		}
 
 		.withoutlimits{
 			position: absolute;
-			width: 435px;
+			width: 20%;
 			height: 92px;
-			left: 855px;
+			left: 44.5%;
 			top: 50px;
-
 			font-family: 'Circular Std';
 			font-style: normal;
 			font-weight: 700;
@@ -674,79 +766,100 @@ input {
 			line-height: 46px;
 
 			color: $font-color;
+			@include respons(1440px) {
+				font-size: 30px;
+				line-height: 40px;
+			}
+			
 		}
 		.limitstxt{
 			position: absolute;
-			width: 480px;
+			width: 25%;
 			height: 150px;
-			left: 855px;
+			left: 44.5%;
 			top: 200px;
 			font-family: 'Roboto';
 			font-style: normal;
 			font-weight: 400;
-			font-size: 18px;
-			line-height: 30px;
-			
 			color: $font-color;
+			@include responsive(1440px){
+				font-size: 83%;
+				line-height: 25px;
+			}
+			@include respons(1300px) {
+				font-size: 75%;
+				line-height: 25px;
+			}
+			@include respons(1440px) {
+				font-size: 83%;
+				line-height: 25px;
+			}
+			@include main(1920px) {
+				font-size: 100%;
+				line-height: 30px;
+			}
 		}
 		.linktodocumentation{
 			position: absolute;
-			width: 256px;
+			width: 13%;
 			height: 64px;
-			left: 855px;
+			left: 44.5%;
 			top: 406px;
 			border: none;
 			background: #70C217;
 			border-radius: 60px;
-			font-size: 18px;
+			font-size: 85%;
 			color: $font-color;
+			
 		}
 		.ourconsultation{
 			position: absolute;
-			width: 430px;
-			height: 548px;
-			left: 1060px;
-			top: 520px;
+			width: 27%;
+			height: 57%;
+			left: 55%;
+			top: 47%;
+
 		}
 		.globalcommunity{
 			position: absolute;
-			width: 506px;
+			width: 25%;
 			height: 92px;
-			left: 595px;
+			left: 31%;
 			top: 550px;
 			font-family: 'Circular Std';
 			font-style: normal;
 			font-weight: 700;
 			font-size: 36px;
 			line-height: 46px;
-			
 			color: $font-color;	
 		}
 		.aboutcommunity{
 			position: absolute;
-			width: 480px;
+			width: 25%;
 			height: 150px;
-			left: 595px;
+			left: 31%;
 			top: 700px;
-			
 			font-family: 'Roboto';
 			font-style: normal;
 			font-weight: 400;
-			font-size: 18px;
+			font-size: 100%;
 			line-height: 30px;
 			color: $font-color;
 		}
 		.linktodoc{
 			position: absolute;
-			width: 256px;
+			width: 13%;
 			height: 64px;
-			left: 595px;
-			top: 890px;
+			left: 31%;
+			top: 910px;
 			border: none;
 			background: #70C217;
 			border-radius: 60px;
-			font-size: 18px;
+			font-size: 100%;
 			color: $font-color;
+			@include respons(1440px) {
+				font-size: 80%;
+			}
 		}
 		
 	}	
@@ -755,7 +868,7 @@ input {
 
 .reviews{
     position: absolute;
-    width: 1920px;
+    width: 100%;
     height: 1209px;
     left: 0px;
     top: 3450px;
@@ -768,138 +881,4 @@ input {
     rgba(236, 240, 253, 0) 100%);
 }
 
-.people-section{
-	position: absolute;
-	top: 4200px;
-	.realpeople{
-		position: absolute;
-		width: 648px;
-		height: 70px;
-		left: 636px;
-		top: 200px;
-		font-family: 'Circular Std';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 55px;
-		line-height: 70px;
-		/* identical to box height, or 127% */
-		
-		text-align: center;
-		
-		color: $color-head;
-	}
-	.peopletxt{
-		position: absolute;
-		width: 660px;
-		height: 50px;
-		left: 630px;
-		top: 410px;		
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 25px;
-		/* or 139% */
-		
-		text-align: center;
-		
-		color: $color-text;
-	}
 
-	.peopleimg{
-		position: absolute;
-		left: 305px;
-		top: 500px;
-	}
-
-	.radius{
-		position: absolute;
-		left: 201px;
-		top: 590px;
-	}
-
-	.group13{
-		position: relative;
-		left: 90.44px;
-		top: 750px;
-
-	}
-	.ellipspeople{
-		position: absolute;
-		left: 1300.96px;
-		top: 640px;
-	}
-	.circle1{
-		position: absolute;
-		border: 5px solid $color-yellow;
-		width: 61px;
-		height: 61px;
-		left: 116px;
-		top: 580px;
-		box-sizing: border-box;
-		border-radius: 40px;
-	}
-	.circle2{
-		box-sizing: border-box;
-		position: absolute;
-		width: 34px;
-		height: 34px;
-		left: 200px;
-		border-radius: 40px;
-		top: 690px;
-		border: 5px solid $color-yellow;
-	}
-	.circle3{
-		box-sizing: border-box;
-
-		position: absolute;
-		width: 43px;
-		height: 43px;
-		left: 1614px;
-		top: 540px;
-		border-radius: 40px;
-		border: 5px solid $color-yellow;
-
-	}
-	.darkblue{
-		position: absolute;
-		width: 1920px;
-		height: 261px;
-		left: 0px;
-		top: 790px;
-		align-items: center;
-		display: flex;
-		gap: 50px;
-		background: #5F37EF;
-	}
-	.startbusiness{
-		position: absolute;
-		width: 855px;
-		height: 105px;
-		left: 470px;
-		
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 36px;
-		line-height: 52px;
-		/* or 146% */
-		
-		
-		color: #FFFFFF;
-		
-	}
-	.businessbtn{
-		box-sizing: border-box;
-
-		position: absolute;
-		width: 207px;
-		height: 72px;
-		left: 1342px;
-		background: none;
-		color: #FFFFFF;		
-		border: 2px solid #FFFFFF;
-		border-radius: 60px;
-	}
-	
-}

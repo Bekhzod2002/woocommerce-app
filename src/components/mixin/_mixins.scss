@@ -1,0 +1,17 @@
+@mixin respons($width) {
+    @media(max-width: $width) {
+        @content;
+    }
+}
+
+@mixin responsive($minwidth) {
+    @media(min-width: $minwidth) {
+        @content;
+    }
+}
+
+@mixin main($mainwidth) {
+    @media(width: $mainwidth) {
+        @content;
+    }
+}

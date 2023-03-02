@@ -1,18 +1,23 @@
+@import '../mixin/mixins';
+
 
 .linkfoot{
+
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 80%;
 }
 
 .footer{
     position: relative;
-    width: 1920px;
+    width: 100%;
     height: 900px;
     left: 0px;
-    top: 4690px;
+    top: 5285px;
 
     background: #7854F7;
+
+
     .circle4{
 		box-sizing: border-box;
 
@@ -20,9 +25,13 @@
 		width: 89px;
 		height: 88px;
 		border-radius: 80px;
-		left: 1657px;
+		left: 90%;
         top: -60px;
 		border: 5px solid #FFBA49;
+
+        @include responsive(1400px) {
+            left: 87%;
+        }
 	}
     .iconsfoot{
         position: absolute;
@@ -31,52 +40,51 @@
         top: 100px;
         align-items: center;
 
+
         .checkicon{
             position: absolute;
-            width: 369px;
+            width: 22%;
             height: 53px;
-            left: 304px;
+            left: 15%;
             align-items: center;
             display: flex;
             gap: 20px;
             font-family: 'Roboto';
             font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 52px;
+            font-weight: 700;
+            font-size: 100%;
             color: #FFFFFF;
+
         }
         .unionicon{
             position: absolute;
-            width: 386px;
+            width: 22%;
             height: 53px;
-            left: 747px;
+            left: 38%;
             align-items: center;
             display: flex;
             gap: 20px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
-            line-height: 52px;
-
-
+            font-size: 100%;
             color: #FFFFFF;
+
         }
         .lockicon{
             position: absolute;
-            width: 368px;
+            width: 22%;
             height: 53px;
-            left: 1207px;
+            left: 63%;
             align-items: center;
             display: flex;
             gap: 20px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
-            line-height: 52px;
+            font-size: 100%;
             color: #FFFFFF;
+
         }
     }
     .logofoot{
@@ -88,74 +96,78 @@
     }
     .chiziq{
         position: absolute;
-        width: 1480px;
-        left: 180px;
-        top: 460px;
+        width: 70%;
+        left: 14%;
+        top: 50%;
 
         border-bottom: 1px solid #9A7DFF;
+
     }
     .footinfo{
         position: absolute;
         display: flex;
-        top: 500px;
-        gap: 110px;
+        width: 70%;
+        top: 53%;
+        gap: 5%;
         width: 100%;
-        left: 437px;
+        justify-content: center;
+
         .aboutus{
             display: grid;
             gap: 10px;
-            width: 102px;
+            width: 6%;
             height: 77px;
             .abouthead{
-                font-size: 14px;
+                width: 100%;
+                font-size: 90%;
                 font-weight: 700;
                 color: #FFFFFF;
             }
         }
         .footmenu{
-            width: 132px;
+            width: 12%;
             height: 264px;
             display: grid;
             gap: 10px;
             .commerce{
               
-                font-size: 14px;
+                font-size: 90%;
                 font-weight: 700;
                 color: #FFFFFF;
             }
         }
         .productmenu{
-            width: 145px;
+            width: 10%;
             height: 88px;
             display: grid;
             gap: 10px;
             .otherproduct{
               
-                font-size: 14px;
+                font-size: 90%;
                 font-weight: 700;
                 color: #FFFFFF;
             }
         }
         .support{
-          
+            width: 7%;
             display: grid;
             gap: 10px;
             height: 154px;
             .supporthead{
               
-                font-size: 14px;
+                font-size: 90%;
                 font-weight: 700;
                 color: #FFFFFF;
             }
         }
         .ourrecommend{
-          
+            width: 9%;
             display: grid;
             gap: 10px;
             height: 110px;
             .recommendation{
               
-                font-size: 14px;
+                font-size: 90%;
                 font-weight: 700;
                 color: #FFFFFF;
             }
@@ -167,16 +179,19 @@
     position: absolute;
     height: 40px;
     width: 100%;
-    top: 6170px;
+    top: 6220px;
     display: flex;
-    text-align: center;
     justify-content: center;
-    gap: 340px;
+    gap: 20%;
     
     .iconscontact{
         display: flex;
         gap: 40px;
         font-size: 20px;
+    }
+    .copyright{
+        
+        font-size: 70%;
     }
 }
 

@@ -80,7 +80,7 @@ const Footer = () => {
                     <ImConnection/>
                     <FaInstagram/>
                 </div>
-                <div>COPYRIGHT WOOCOMMERCE 2020 - TERMS & CONDITIONS  PRIVACY POLICY</div>
+                <div className="copyright" >COPYRIGHT WOOCOMMERCE 2020 - TERMS & CONDITIONS  PRIVACY POLICY</div>
                 <div><img src={automatic}/></div>
             </div>
         </>

@@ -1,0 +1,169 @@
+@import '../../mixin/_mixins.scss';
+$color-yellow: #FFBA49;
+.people-section{
+	position: absolute;
+	width: 100%;
+    height: 600px;
+    left: 0;
+	top: 357.5%;
+	@include responsive(1400px) {
+		width: 100%;
+	}
+	.realpeople{
+		position: absolute;
+		width: 40%;
+		height: 70px;
+		left: 30%;
+		top: 200px;
+		font-family: 'Circular Std';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 55px;
+		text-align: center;
+		color: #272D4E;
+        @include responsive(1440px) {
+            width: 40%;
+            font-size: 45px;
+        }
+	}
+	.peopletxt{
+		position: absolute;
+		width: 40%;
+		height: 50px;
+		left: 30%;
+		top: 60%;		
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+		color: #94A2B3;
+
+        @include responsive(1440px) {
+            width: 35%;
+            left: 32%;
+            font-size: 14px;
+        }
+	}
+
+	.peopleimg{
+		position: absolute;
+        width: 67%;
+		left: 15%;
+		top: 81.9%;
+        height: 293px;
+	}
+
+	.radius{
+		position: absolute;
+        width: 80%;
+		left: 8.5%;
+		top: 100%;
+        @include respons(1440px) {
+        }        
+	}
+
+	.group13{
+		position: relative;
+		width: 15%;
+        left: 2.7%;
+		top: 126%;
+        
+
+	}
+	.ellipspeople{
+		position: absolute;
+        width: 25%;
+		left: 65%;
+		top: 107%;
+	}
+	.circle1{
+		position: absolute;
+		border: 5px solid $color-yellow;
+		width: 61px;
+		height: 61px;
+		left: 5%;
+		top: 580px;
+		box-sizing: border-box;
+        border-radius: 50%;
+	}
+	.circle2{
+		box-sizing: border-box;
+		position: absolute;
+		width: 34px;
+		height: 34px;
+		left: 9.4%;
+		border-radius: 40px;
+		top: 690px;
+		border: 5px solid $color-yellow;
+	}
+	.circle3{
+		box-sizing: border-box;
+
+		position: absolute;
+		width: 43px;
+		height: 43px;
+		left: 82%;
+		top: 540px;
+		border-radius: 40px;
+		border: 5px solid $color-yellow;
+        
+
+	}
+
+	
+}
+
+.darkblue{
+    position: absolute;
+    width: 100%;
+    height: 261px;
+    left: 0px;
+    top: 423%;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    background: #5F37EF;
+    @include responsive(1400px) {
+        width: 100%;
+    }
+    @include respons(1200px) {
+        width: 100%;
+    }
+    .startbusiness{
+		position: absolute;
+		width: 60%;
+		left: 24%;
+		
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 200%;
+		color: #FFFFFF;
+        @include responsive(1440px) {
+            width: 60%;
+            left: 23%;
+            font-size: 160%;
+        }
+        @include respons(1400px) {
+            left: 15%;
+        }
+	}
+	.businessbtn{
+		box-sizing: border-box;
+
+		position: absolute;
+		width: 13%;
+		height: 27%;
+		left: 72%;
+		background: none;
+		color: #FFFFFF;		
+		border: 2px solid #FFFFFF;
+		border-radius: 60px;
+        @include responsive(1440px) {
+            left: 70%;
+            width: 13%;
+            height: 25%;
+        }
+	}
+}
